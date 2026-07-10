@@ -27,9 +27,7 @@ from telegram import Bot
 
 async def main():
     bot = Bot(token=os.environ['BOT_TOKEN'])
-    # اینجا Chat ID خودت رو بذار
-    chat_id = 8703615510:AAFXnJPUwcmvC1U0zRVN6gR-t1J_7KiOkvs
-    
+    chat_id = 6932573031
     await bot.send_message(chat_id=chat_id, text='⏳ اسکن خودکار بازار شروع شد...')
     signals = await scan_markets()
     
